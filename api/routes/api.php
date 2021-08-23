@@ -19,4 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/greeting', [FruitController::class, 'index'] );
+Route::get('/fruits', [FruitController::class, 'index'] );
